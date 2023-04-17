@@ -1,0 +1,24 @@
+mat-grid-list{
+    background-color: rgb(53, 57, 60);
+}
+
+.characterAvatar{
+    border-radius: 25px;
+    margin-left: auto;
+}
+
+.card{
+    background-color: rgb(97, 100, 102);
+    border-radius: 15px;
+    width: 250px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card-title-group{
+    padding-right: 15px;
+}

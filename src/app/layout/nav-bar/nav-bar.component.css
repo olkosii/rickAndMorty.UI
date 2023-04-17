@@ -1,0 +1,29 @@
+.mat-button-base{
+    margin-right: 1em;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+mat-toolbar,div{
+    background-color:rgb(249, 250, 251)
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 220px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 5.625rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}

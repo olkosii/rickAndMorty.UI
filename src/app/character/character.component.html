@@ -1,0 +1,38 @@
+
+<div class="container"> 
+  <div class="flexStyle"> 
+    <img [src]="character.image" alt="Photo of a character" class="characterAvatar">
+    <div class="characterInformation">
+      <h1 class="characterName">
+          {{ character.name }}
+      </h1>
+      <div class="characterInfo">
+        Species: {{ character.species }} <br><br>
+        Status: {{ character.status }} <br><br>
+        Gender: {{ character.gender }} <br><br>
+        Origin: <br>
+        <div class="originInformation">
+          Name: {{ character.origin.name }} <br>
+          Dimension: {{ character.origin.dimension }} <br>
+          Type: {{ character.origin.type }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="characterId && +characterId === 1; else notFirstCharacter"> 
+    <div class="button">
+      <button mat-button routerLink="/">Back to the characters list</button>
+      <button mat-button [routerLink]="['/character/overview', character.id+1]">Next character</button>
+    </div>
+  </div>
+
+  <ng-template #notFirstCharacter>
+    <div class="button">
+      <button mat-button [routerLink]="['/character/overview', character.id-1]">Previous character</button>
+      <button mat-button [routerLink]="['/character/overview', character.id+1]">Next character</button>
+    </div>
+  </ng-template>
+</div>
+
+<hero-image></hero-image>

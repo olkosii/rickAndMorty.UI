@@ -1,0 +1,62 @@
+.card{
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height:100%;
+    background-color: rgb(53, 57, 60);
+}
+
+.flexStyle{
+    display: flex;
+    flex-direction: row;
+}
+
+.characterAvatar{
+    border-radius: 25px;
+    margin: 15px 15px 15px 15px;
+    padding: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.characterInformation{
+    margin: 15px 15px 15px 50px;
+}
+
+.originInformation{
+    margin-left: 20px;
+}
+
+.characterInfo{
+    margin-top: 10px;
+    font-weight: 100;
+    font-size:medium;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(220, 222, 225);
+}
+
+.characterName{
+    font-weight: 600;
+    font-size: 5.625rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(220, 222, 225);
+    text-shadow: 2px 2px 4px rgba(124, 115, 115, 0.4);
+    padding: 30px 20px 30px 140px;
+    margin: auto;
+}
+
+.button{
+    color:rgb(220, 222, 225);
+}

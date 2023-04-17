@@ -1,0 +1,26 @@
+<hero-image></hero-image>
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let character of characters">
+    <mat-card class="card">
+
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{ character.name }}</mat-card-title>
+          <mat-card-subtitle> 
+            {{ character.species }} <br>
+            Status : {{ character.status }}
+          </mat-card-subtitle>
+        </mat-card-title-group>
+          <img mat-card-sm-image [src]="character.image" class="characterAvatar">
+      </mat-card-header>
+
+      <mat-card-content>
+      </mat-card-content>
+
+      <mat-card-actions class="container">
+        <a mat-button [routerLink]="['/character/overview', character.id]">Read more</a>
+      </mat-card-actions>
+
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
